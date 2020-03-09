@@ -10,11 +10,12 @@ export(int,"disabled","single_drag","multi_drag") var movement_gesture = 2
 
 func _unhandled_input(e):
 	if (e is InputEventMultiScreenDrag and  movement_gesture == 2
-		or e is InputEventSingleScreenDrag and  movement_gesture == 1):
+		or e is InputEventScreenDrag and  movement_gesture ==1):
+		print(e.as_text())
 		_move(e)
-	elif e is InputEventScreenTwist and rotation_gesture == 1:
+	elif e is InputEventTwistGesture and rotation_gesture == 1:
 		_rotate(e)
-	elif e is InputEventScreenPinch and zoom_gesture == 1:
+	elif e is InputEventPinchGesture and zoom_gesture == 1:
 		_zoom(e)
 
 # Given a a position on the camera returns to the corresponding global position

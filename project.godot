@@ -8,58 +8,16 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Reference",
-"class": "InputEventMultiScreenDrag",
-"language": "GDScript",
-"path": "res://Godot-Touch-Input-Manager_v0_5_1/CustomInputEvents/InputEventMultiScreenDrag.gd"
-}, {
-"base": "Reference",
-"class": "InputEventScreenPinch",
-"language": "GDScript",
-"path": "res://Godot-Touch-Input-Manager_v0_5_1/CustomInputEvents/InputEventScreenPinch.gd"
-}, {
-"base": "Reference",
-"class": "InputEventScreenTwist",
-"language": "GDScript",
-"path": "res://Godot-Touch-Input-Manager_v0_5_1/CustomInputEvents/InputEventScreenTwist.gd"
-}, {
-"base": "Reference",
-"class": "InputEventSingleScreenDrag",
-"language": "GDScript",
-"path": "res://Godot-Touch-Input-Manager_v0_5_1/CustomInputEvents/InputEventSingleScreenDrag.gd"
-}, {
-"base": "Reference",
-"class": "InputEventSingleScreenTap",
-"language": "GDScript",
-"path": "res://Godot-Touch-Input-Manager_v0_5_1/CustomInputEvents/InputEventSingleScreenTap.gd"
-}, {
-"base": "Reference",
-"class": "InputEventSingleScreenTouch",
-"language": "GDScript",
-"path": "res://Godot-Touch-Input-Manager_v0_5_1/CustomInputEvents/InputEventSingleScreenTouch.gd"
-} ]
+_global_script_classes=[  ]
 _global_script_class_icons={
-"InputEventMultiScreenDrag": "",
-"InputEventScreenPinch": "",
-"InputEventScreenTwist": "",
-"InputEventSingleScreenDrag": "",
-"InputEventSingleScreenTap": "",
-"InputEventSingleScreenTouch": ""
+
 }
 
 [application]
 
-config/name="GestureControlledCamera2D"
+config/name="Gesture Controlled Camera 2d"
 run/main_scene="res://Demo.tscn"
-
-[autoload]
-
-InputManager="*res://Godot-Touch-Input-Manager_v0_5_1/InputManager.gd"
-
-[input_devices]
-
-pointing/emulate_touch_from_mouse=true
+config/icon="res://icon.png"
 
 [rendering]
 
